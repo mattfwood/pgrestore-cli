@@ -13,6 +13,7 @@ try {
 
   // check if database exists in config
   if (fs.existsSync('./config/database.yml')) {
+    console.log('database.yml exists');
     // fetch database names
     const databaseConfig = fs.readFileSync('./config/database.yml', 'utf8');
 
@@ -22,7 +23,7 @@ try {
       .filter(line => line.includes('database'))
       .map(name => name.split(': ')[1]);
   } else {
-    // if database.yml doesn't exist, set databaseNames to empty array and prompt later
+    // if database.yml doesn't exist, set databaseNames to null and prompt later
     databaseNames = null;
   }
 
@@ -32,8 +33,8 @@ try {
   // filter root files by .dump extension
   const dumpFiles = files.filter(file => {
     // return all dump files
-    file.includes('.dump');
-  }) || [];
+    return file.includes('.dump');
+  });
 
   const questions = [
     {
