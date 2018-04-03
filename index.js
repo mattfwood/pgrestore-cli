@@ -5,7 +5,6 @@ const shell = require('shelljs');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 
-// TODO: allow user args for different database.yml locations
 // var userArgs = process.argv.slice(2);
 
 try {
