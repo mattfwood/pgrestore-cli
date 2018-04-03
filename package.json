@@ -6,7 +6,7 @@
   "author": "Matt Wood",
   "license": "MIT",
   "bin": {
-    "pgr": "index.js"
+    "pgrestore": "index.js"
   },
   "dependencies": {
     "chalk": "^2.3.2",
