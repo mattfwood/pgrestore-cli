@@ -1,6 +1,6 @@
 {
   "name": "pgrestore-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Friendlier interface for using pg_restore",
   "preferGlobal": true,
   "author": "Matt Wood",
