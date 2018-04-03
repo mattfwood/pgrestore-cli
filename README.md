@@ -8,3 +8,5 @@
 - Gets list of `.dump` files
 - CLI select interface to select both
 - Runs pg_restore with the selected parameters
+
+![example photo](https://raw.githubusercontent.com/mattfwood/pgrestore-cli/master/screenshot.png)
