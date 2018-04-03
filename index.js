@@ -46,6 +46,7 @@ try {
       const selectedDumpFile = answers.dumpFile;
       // execute command
       shell.exec(`pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d ${selectedDatabase} ${selectedDumpFile}`);
+      console.log(chalk.green(`Successfully restored database ${selectedDatabase}`));
     });
   } else {
     console.log(chalk.black.bgRed('Missing Resources:'));
