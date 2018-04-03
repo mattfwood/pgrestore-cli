@@ -12,7 +12,6 @@ try {
 
   // check if database exists in config
   if (fs.existsSync('./config/database.yml')) {
-    console.log('database.yml exists');
     // fetch database names
     const databaseConfig = fs.readFileSync('./config/database.yml', 'utf8');
 
