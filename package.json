@@ -1,6 +1,6 @@
 {
   "name": "pgrestore-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Friendlier interface for using pg_restore",
   "url": "https://github.com/mattfwood/pgrestore-cli",
   "repository": {
