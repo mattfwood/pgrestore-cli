@@ -9,7 +9,7 @@
 
 or
 
-``` $ yarn add global pgrestore-cli ```
+``` $ yarn global add pgrestore-cli ```
 
 ## Usage
 
